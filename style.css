@@ -7,17 +7,38 @@ body {
   padding: 20px;
 }
 
-/* Меню зверху */
-.nav-bar {
+/* Шапка сайту */
+.site-header {
   text-align: center;
   background-color: #ffffff;
   padding: 10px;
   border: 1px solid #ddd;
 }
 
-.nav-bar a {
-  color: #0066cc;
+.site-header nav,
+.site-header ul,
+.site-header li {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Роздільник «|» між пунктами меню */
+.site-header li + li::before {
+  content: "|";
   margin: 0 10px;
+}
+
+.site-header a {
+  color: #0066cc;
+}
+
+.site-header .logo {
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 /* Головна секція з заголовком */
@@ -38,11 +59,12 @@ h1 {
   margin: 10px auto;
 }
 
-/* Кнопки */
-button {
+/* Кнопки (посилання, оформлені як кнопки) */
+.btn {
+  display: inline-block;
   padding: 8px 16px;
   font-size: 14px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn-black {
@@ -119,7 +141,6 @@ button {
   color: #888;
   font-size: 12px;
 }
-
 
 .footer {
   text-align: center;
