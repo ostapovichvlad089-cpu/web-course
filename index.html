@@ -6,14 +6,48 @@
   <meta name="description" content="Навчальний проєкт з курсу веб-програмування">
   <title>Plain — Сучасна підтримка користувачів</title>
   <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "З якими інструментами працює Plain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plain надсилає сповіщення Slack у реальному часі про вхідні запити та дозволяє створювати й відстежувати проблеми Linear безпосередньо з розмов."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чи потрібні спеціальні програми для перегляду даних клієнтів?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ні. Інформація про клієнтів береться в режимі реального часу з вашої власної бази даних."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чи можна підключати власні системи?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Так. Архітектура Plain орієнтована на API, тому ви можете створювати те, чого Plain не пропонує, та підключати власні системи."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
+   <a class="visually-hidden focusable" href="#main">Перейти до основного вмісту</a>
+
   <header class="site-header">
     <a href="index.html" class="logo">Plain.</a>
-    <nav>
+    <nav aria-label="Основна навігація">
       <ul>
-        <li><a href="index.html">Головна</a></li>
+        <li><a href="index.html" aria-current="page">Головна</a></li>
         <li><a href="about.html">Про автора</a></li>
         <li><a href="contacts.html">Контакти</a></li>
       </ul>
@@ -22,33 +56,43 @@
 
   <main id="main">
 
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <p class="small-badge">A Labels & Summaries</p>
-      <h1>Як розробники підтримують користувачів</h1>
+      <h1 id="hero-title">Як розробники підтримують користувачів</h1>
       <p class="subtitle">
         Сучасна підтримка — це поєднання усунення несправностей, продажів та успіху.
         Це відбувається не лише електронною поштою, а й будь-де, де знаходяться ваші клієнти.
       </p>
+
       <div class="buttons">
-        <a class="btn btn-black" href="https://www.plain.com/">Sign in</a>
-        <a class="btn btn-gray" href="contacts.html">Book a Demo</a>
+        <a class="btn btn-black" href="https://www.plain.com/">Sign in
+          <svg class="icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a class="btn btn-gray" href="contacts.html">Book a Demo
+          <svg class="icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
       </div>
+
+        <figure>
+        <img src="images/screenshot.png" alt="Інтерфейс Plain: розмова з клієнтом, праворуч панель з мітками, задачею Linear та даними клієнта" width="870">
+        <figcaption>Рис. 1. Інтерфейс Plain: розмова з клієнтом, мітки та задача Linear в одному вікні.</figcaption>
+      </figure>
     </section>
 
     <hr>
 
-    <section class="section">
+      <section class="section" aria-labelledby="problem-title">
       <p class="tag">Problem</p>
-      <h2>Інструмент підтримки недоступний</h2>
+      <h2 id="problem-title">Інструмент підтримки недоступний</h2>
       <p>
         Йдеться вже не лише про SLA щодо часу реагування, а про те, щоб виправити помилку протягом 30 хвилин.
         Підтримка змінилася, але інструменти підтримки — ні.
       </p>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="solution-title">
       <p class="tag">Solution</p>
-      <h2>Plain створено для сучасної, високопродуктивної підтримки.</h2>
+      <h2 id="solution-title">Plain створено для сучасної, високопродуктивної підтримки.</h2>
 
       <article class="box">
         <h3>Підібрано для вас та ваших клієнтів</h3>
@@ -75,9 +119,9 @@
       </article>
     </section>
 
-    <section class="dark-box">
+    <section class="dark-box" aria-labelledby="speed-title">
       <p class="dark-tag">Speed & Programmability</p>
-      <h2>Не поворухніть пальцем. Буквально.</h2>
+      <h2 id="speed-title">Не поворухніть пальцем. Буквально.</h2>
       <p>
         Від неймовірно швидкої роботи до потужної палітри команд і комплексних комбінацій клавіш,
         кожна частина Plain розроблена та створена для швидкості.
@@ -90,15 +134,42 @@
       <a class="btn btn-white" href="https://www.plain.com/">Read our docs</a>
     </section>
 
-    <aside class="section">
-      <h2>Про цей проєкт</h2>
+      <section class="section" aria-labelledby="faq-title">
+     <h2 id="faq-title">Часті запитання</h2>
+
+      <details>
+        <summary>З якими інструментами працює Plain?</summary>
+        <p>Plain надсилає сповіщення Slack у реальному часі про вхідні запити та дозволяє створювати й відстежувати проблеми Linear безпосередньо з розмов.</p>
+      </details>
+
+      <details>
+        <summary>Чи потрібні спеціальні програми для перегляду даних клієнтів?</summary>
+        <p>Ні. Інформація про клієнтів береться в режимі реального часу з вашої власної бази даних.</p>
+      </details>
+
+      <details>
+        <summary>Чи можна підключати власні системи?</summary>
+        <p>Так. Архітектура Plain орієнтована на API, тому ви можете створювати те, чого Plain не пропонує, та підключати власні системи.</p>
+      </details>
+    </section>
+
+    <aside class="section" aria-labelledby="about-project-title">
+      <h2 id="about-project-title">Про цей проєкт</h2>
       <p>Навчальний макет сторінки за шаблоном Plain у межах курсу веб-програмування.</p>
     </aside>
 
   </main>
 
-  <footer class="footer">
-    <p>© 2024 Владислав Остапович. Всі права захищені.</p>
+    <footer class="footer">
+        <p>© <time datetime="2026">2026</time> Владислав Остапович. Всі права захищені.</p>
+    <address>
+      Контакти автора:
+      <a href="mailto:ostapovich.vlad089@gmail.com">ostapovich.vlad089@gmail.com</a>,
+      <a href="https://github.com/ostapovichvlad089-cpu">GitHub</a>
+    </address>
+    <a class="to-top" href="#" aria-label="На початок сторінки">
+      <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 8l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    </a>
   </footer>
 
 </body>
