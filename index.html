@@ -7,36 +7,6 @@
   <title>Plain — Сучасна підтримка користувачів</title>
   <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "З якими інструментами працює Plain?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Plain надсилає сповіщення Slack у реальному часі про вхідні запити та дозволяє створювати й відстежувати проблеми Linear безпосередньо з розмов."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Чи потрібні спеціальні програми для перегляду даних клієнтів?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ні. Інформація про клієнтів береться в режимі реального часу з вашої власної бази даних."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Чи можна підключати власні системи?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Так. Архітектура Plain орієнтована на API, тому ви можете створювати те, чого Plain не пропонує, та підключати власні системи."
-        }
-      }
-    ]
-  }
   </script>
 </head>
 <body>
@@ -46,10 +16,17 @@
   <header class="site-header">
     <a href="index.html" class="logo">Plain.</a>
     <nav aria-label="Основна навігація">
-      <ul>
+          <ul>
         <li><a href="index.html" aria-current="page">Головна</a></li>
         <li><a href="about.html">Про автора</a></li>
         <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="https://www.plain.com/">Маніфест</a></li>
+        <li><a href="https://www.plain.com/docs/product">Документація</a></li>
+        <li><a href="https://www.plain.com/customers">Клієнти</a></li>
+        <li><a href="https://www.plain.com/pricing">Ціни</a></li>
+        <li><a href="https://www.plain.com/blog">Блог</a></li>
+        <li><a href="https://www.plain.com/changelog">Журнал змін</a></li>
+        <li><a class="btn-signin" href="https://signin.auth.plain.com/">Увійти</a></li>
       </ul>
     </nav>
   </header>
@@ -57,7 +34,7 @@
   <main id="main">
 
     <section class="hero" aria-labelledby="hero-title">
-      <p class="small-badge">A Labels & Summaries</p>
+      <a class="latest" href="https://www.plain.com/"><span class="latest-accent" aria-hidden="true">✦</span> <span class="latest-accent">Latest</span> AI Labels &amp; Summaries <span aria-hidden="true">→</span></a>
       <h1 id="hero-title">Як розробники підтримують користувачів</h1>
       <p class="subtitle">
         Сучасна підтримка — це поєднання усунення несправностей, продажів та успіху.
@@ -65,11 +42,9 @@
       </p>
 
       <div class="buttons">
-        <a class="btn btn-black" href="https://www.plain.com/">Sign in
-          <svg class="icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      <a class="btn btn-black" href="https://signin.auth.plain.com">Sign in <span aria-hidden="true">›</span></a>
         </a>
-        <a class="btn btn-gray" href="contacts.html">Book a Demo
-          <svg class="icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M4 2l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      <a class="btn btn-gray" href="https://www.plain.com/get/demo">Book a Demo <span aria-hidden="true">›</span></a>
         </a>
       </div>
 
@@ -77,81 +52,200 @@
         <img src="images/screenshot.png" alt="Інтерфейс Plain: розмова з клієнтом, праворуч панель з мітками, задачею Linear та даними клієнта" width="870">
         <figcaption>Рис. 1. Інтерфейс Plain: розмова з клієнтом, мітки та задача Linear в одному вікні.</figcaption>
       </figure>
+            <p class="logos-title">Нам довіряють команди нового покоління</p>
+      <img class="logos" src="images/logos.png" alt="Логотипи компаній: Airplane, Railway, Resend, CodeSandbox, Clerk, Inngest, Crowd.dev, Mintlify, Trigger.dev, Replay">
     </section>
 
     <hr>
 
-      <section class="section" aria-labelledby="problem-title">
+          <section class="section section-wide" aria-labelledby="problem-title">
       <p class="tag">Problem</p>
       <h2 id="problem-title">Інструмент підтримки недоступний</h2>
-      <p>
+      <p class="problem-text">
         Йдеться вже не лише про SLA щодо часу реагування, а про те, щоб виправити помилку протягом 30 хвилин.
         Підтримка змінилася, але інструменти підтримки — ні.
       </p>
+
+      <div class="problem-grid">
+        <article class="problem-card problem-card-tall">
+          <h3>Не створено для технічних продуктів</h3>
+          <img src="images/problem-1.png" alt="Лист клієнту з фрагментом коду в звичайній пошті">
+        </article>
+
+        <article class="problem-card">
+          <h3>Єдина структура даних для всіх</h3>
+          <img src="images/problem-2.png" alt="Список міток клієнта в одному жорсткому форматі">
+        </article>
+
+        <article class="problem-card">
+          <h3>Безліч каналів комунікації</h3>
+          <img src="images/problem-3.png" alt="Повідомлення клієнта у Slack">
+        </article>
+
+        <article class="problem-card">
+          <h3>Повільні інструменти</h3>
+          <img src="images/problem-4.png" alt="Індикатор завантаження списку клієнтів">
+        </article>
+
+        <article class="problem-card">
+          <h3>Складно інтегрувати</h3>
+          <img src="images/problem-5.png" alt="Фрагмент коду власної програми для підключення до сервісу">
+        </article>
+      </div>
     </section>
 
-    <section class="section" aria-labelledby="solution-title">
+    <section class="section section-wide" aria-labelledby="solution-title">
       <p class="tag">Solution</p>
       <h2 id="solution-title">Plain створено для сучасної, високопродуктивної підтримки.</h2>
 
+      <div class="cards">
       <article class="box">
-        <h3>Підібрано для вас та ваших клієнтів</h3>
-        <p>
-          Простота працює так, як ви. Отримуйте сповіщення Slack у реальному часі про вхідні запити,
-          створюйте та відстежуйте проблеми Linear безпосередньо з розмов.
-        </p>
-      </article>
+  <div class="box-text">
+    <h3>Підібрано для вас та ваших клієнтів</h3>
+    <p>
+      Простота працює так, як ви. Отримуйте сповіщення Slack у реальному часі про вхідні запити,
+      створюйте та відстежуйте проблеми Linear безпосередньо з розмов.
+    </p>
+  </div>
+  <img class="box-image" src="images/solution-1.png" alt="Розмова з клієнтом, фрагмент коду та задача Linear">
+</article>
 
       <article class="box">
+        <div class="box-text">
         <h3>Створено для вирішення проблем із високим контекстом</h3>
         <p>
           Переглядайте інформацію про клієнтів у режимі реального часу з вашої власної бази даних —
           жодних спеціальних програм не потрібно.
         </p>
+      </div>
+      <img class="box-image" src="images/solution-2.png" alt="Картка клієнта: email, групи, тариф та інші обговорення">
       </article>
 
       <article class="box">
+        <div class="box-text">
         <h3>Створено для роботи зі значними обсягами повідомлень</h3>
         <p>
           Організуйте своїх клієнтів у групи, керуйте розмовами за допомогою міток та пріоритетів,
           надсилайте масові повідомлення кільком людям.
         </p>
+      </div>
+       <img class="box-image" src="images/solution-3.png" alt="Бічне меню Plain з мітками, групами та списком звернень">
       </article>
     </section>
 
-    <section class="dark-box" aria-labelledby="speed-title">
-      <p class="dark-tag">Speed & Programmability</p>
-      <h2 id="speed-title">Не поворухніть пальцем. Буквально.</h2>
-      <p>
-        Від неймовірно швидкої роботи до потужної палітри команд і комплексних комбінацій клавіш,
-        кожна частина Plain розроблена та створена для швидкості.
+        <section class="section section-wide" aria-labelledby="channels-title">
+      <p class="tag">Channels</p>
+      <h2 id="channels-title">Для вашого безкоштовного тарифу, корпоративних клієнтів та всіх, хто між ними.</h2>
+      <p class="problem-text">
+        Plain дає змогу легко зустрічати ваших клієнтів там, де вони є: у вашому продукті,
+        на пошті чи в будь-якому іншому каналі, який ви оберете, завдяки нашому потужному та гнучкому API.
       </p>
-      <h2>Створено як API, а не просто як його мати</h2>
-      <p>
-        Завдяки архітектурі Plain, що орієнтована на API, ви можете створювати все,
-        чого не пропонує Plain, та підключати власні системи.
-      </p>
-      <a class="btn btn-white" href="https://www.plain.com/">Read our docs</a>
+
+      <div class="channels-grid">
+        <article class="channel-card channel-wide">
+          <h3>Електронна пошта</h3>
+          <p>Підключіть до Plain до 5 спільних поштових адрес.</p>
+          <img src="images/channel-1.png" alt="Вікно відповіді на лист у Plain з полями From і To та кнопкою Send reply">
+        </article>
+
+        <article class="channel-card channel-narrow">
+          <h3>Вбудовані форми зв'язку</h3>
+          <p>Запропонуйте преміальну підтримку, вбудовану прямо у ваш продукт.</p>
+          <img src="images/channel-2.png" alt="Форма «Get in touch» з вибором: помилка, відгук або питання">
+        </article>
+
+        <article class="channel-card channel-narrow">
+          <h3>Інтерфейс у застосунку</h3>
+          <p>Зберіть усі точки контакту з підтримкою в одному місці.</p>
+          <img src="images/channel-3.png" alt="Віконце «Need help?» з кнопками Discord, документація та зв'язок">
+        </article>
+
+        <article class="channel-card channel-wide">
+          <h3>Власні канали</h3>
+          <p>Якщо в нього є API, Plain його підтримує.</p>
+          <img src="images/channel-4.png" alt="Повідомлення з Hubspot, отримане як звернення в Plain">
+        </article>
+      </div>
     </section>
 
-      <section class="section" aria-labelledby="faq-title">
-     <h2 id="faq-title">Часті запитання</h2>
+        <section class="dark-box" aria-labelledby="speed-title">
+      <div class="dark-inner">
+        <p class="dark-tag">Speed</p>
+        <h2 id="speed-title">Не поворухніть пальцем. Буквально.</h2>
+        <p>
+          Від неймовірно швидкої роботи до потужної палітри команд і комплексних комбінацій клавіш,
+          кожна частина Plain розроблена та створена для швидкості.
+        </p>
 
-      <details>
-        <summary>З якими інструментами працює Plain?</summary>
-        <p>Plain надсилає сповіщення Slack у реальному часі про вхідні запити та дозволяє створювати й відстежувати проблеми Linear безпосередньо з розмов.</p>
-      </details>
+        <div class="speed-grid">
+          <article class="speed-card">
+            <h3>Неймовірно швидко</h3>
+            <p>Проходьте чергу без затримок. Майже кожна дія в Plain виконується за 100 мс або швидше.</p>
+            <img src="images/speed-1.png" alt="Круговий датчик швидкості зі стрілкою">
+          </article>
 
-      <details>
-        <summary>Чи потрібні спеціальні програми для перегляду даних клієнтів?</summary>
-        <p>Ні. Інформація про клієнтів береться в режимі реального часу з вашої власної бази даних.</p>
-      </details>
+          <article class="speed-card">
+            <h3>Cmd+K для всього</h3>
+            <p>Керуйте Plain, не торкаючись миші. Кожна дія доступна через палітру команд.</p>
+            <img src="images/speed-2.png" alt="Палітра команд зі списком дій">
+          </article>
 
-      <details>
-        <summary>Чи можна підключати власні системи?</summary>
-        <p>Так. Архітектура Plain орієнтована на API, тому ви можете створювати те, чого Plain не пропонує, та підключати власні системи.</p>
-      </details>
+          <article class="speed-card">
+            <h3>Створено для клавіатури</h3>
+            <p>Кожну додану комбінацію клавіш не зайнято. Користуйтеся Plain повністю з клавіатури.</p>
+            <img src="images/speed-3.png" alt="Клавіші клавіатури з літерами P L A I N">
+          </article>
+        </div>
+
+        <p class="dark-tag">Programmability</p>
+        <h2>Створено як API, а не просто як його мати</h2>
+        <p>
+          Завдяки архітектурі Plain, що орієнтована на API, ви можете створювати все,
+          чого не пропонує Plain, та підключати власні системи.
+        </p>
+        <a class="btn btn-white" href="https://www.plain.com/">Read our docs <span aria-hidden="true">›</span></a>
+                <div class="api-grid">
+          <ul class="api-list">
+            <li class="api-item api-item-first">
+              <img src="images/api-icon-1.png" alt="">
+              <div>
+                <h3>TypeScript SDK</h3>
+                <p>Зробіть виклик API за лічені хвилини, з повною обробкою помилок, типами та багато іншого.</p>
+              </div>
+            </li>
+            <li class="api-item">
+              <img src="images/api-icon-2.png" alt="">
+              <div>
+                <h3>Плаваюча форма контакту</h3>
+                <p>Швидко додайте плаваючу форму зв'язку у вашу програму на NextJS.</p>
+              </div>
+            </li>
+            <li class="api-item">
+              <img src="images/api-icon-3.png" alt="">
+              <div>
+                <h3>Розширена форма контакту</h3>
+                <p>Створіть складну форму, яка сортує та категоризує всі запити підтримки.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="api-code">
+            <img src="images/api-code.png" alt="Приклад коду на TypeScript: створення клієнта PlainClient і запит даних клієнта">
+            <a class="btn btn-white" href=" https://github.com/ostapovichvlad089-cpu/web-course ">View on Github <span aria-hidden="true">›</span></a>
+          </div>
+        </div>
+      </div>
     </section>
+
+        <section class="section cta" aria-labelledby="cta-title">
+      <img class="cta-logo" src="images/cta-logo.png" alt="Логотип Plain: літера P з крапкою">
+      <h2 id="cta-title">Ви за 1 хв 37 с від кращої підтримки.</h2>
+      <p>Так швидко можна почати роботу з Plain. І так, ми це вимірювали.</p>
+
+      <div class="buttons">
+        <a class="btn btn-black" href="https://www.plain.com/">Get Started <span aria-hidden="true">›</span></a>
+        <a class="btn btn-plain" href="https://www.plain.com/get/demo
+        </section>
 
     <aside class="section" aria-labelledby="about-project-title">
       <h2 id="about-project-title">Про цей проєкт</h2>
@@ -160,16 +254,48 @@
 
   </main>
 
-    <footer class="footer">
-        <p>© <time datetime="2026">2026</time> Владислав Остапович. Всі права захищені.</p>
-    <address>
-      Контакти автора:
-      <a href="mailto:ostapovich.vlad089@gmail.com">ostapovich.vlad089@gmail.com</a>,
-      <a href="https://github.com/ostapovichvlad089-cpu">GitHub</a>
-    </address>
-    <a class="to-top" href="#" aria-label="На початок сторінки">
-      <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 8l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-    </a>
+      <footer class="footer">
+    <div class="footer-inner">
+      <a class="footer-logo" href="index.html">Plain.</a>
+
+      <div class="footer-grid">
+        <nav aria-label="Сторінки сайту">
+          <h2 class="footer-title">Сторінки сайту</h2>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про автора</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="https://github.com/ostapovichvlad089-cpu">GitHub</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Правова інформація">
+          <h2 class="footer-title">Правова інформація</h2>
+          <ul>
+            <li><a href="https://www.plain.com/legal/privacy-policy">Політика конфіденційності</a></li>
+            <li><a href="https://www.plain.com/legal/terms-and-conditions">Умови використання</a></li>
+            <li><a href="https://www.plain.com/legal/terms-and-conditions">Умови для сайту</a></li>
+            <li><a href="https://www.plain.com/legal/terms-and-conditions">Угода про обробку даних</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer-title">Чого ми досягли</h2>
+          <img src="images/footer-badge.png" alt="Значок відповідності стандарту AICPA SOC">
+        </div>
+
+        <div>
+          <h2 class="footer-title">Нас підтримують</h2>
+          <img src="images/footer-backers.png" alt="Логотипи Index Ventures і connect">
+          <p>© <time datetime="2026">2026</time> Владислав Остапович. Всі права захищені.</p>
+          <address>
+            Контакти автора:
+            <a href="mailto:ostapovich.vlad089@gmail.com">ostapovich.vlad089@gmail.com</a>,
+            <a href="https://github.com/ostapovichvlad089-cpu">GitHub</a>
+          </address>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>
