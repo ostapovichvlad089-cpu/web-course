@@ -1,4 +1,4 @@
-/* Базовий фон і шрифт для всієї сторінки */
+/* Base background and font for the whole page */
 body {
   font-family: Arial, sans-serif;
   background-color: #faf9f7;
@@ -15,7 +15,7 @@ main {
   flex: 1;
 }
 
-/* Шапка сайту (flexbox: логотип ліворуч, меню праворуч) */
+/* Site header (flexbox: logo on the left, menu on the right) */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -56,7 +56,7 @@ main {
   border-radius: 6px;
 }
 
-/* Головна секція з заголовком */
+/* Hero section with the main heading */
 .hero {
   text-align: center;
   margin-top: 30px;
@@ -82,7 +82,7 @@ h2 {
   margin: 10px auto;
 }
 
-/* Рядок кнопок (flexbox) */
+/* Row of buttons (flexbox) */
 .buttons {
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ h2 {
   margin: 20px 0;
 }
 
-/* Кнопки (посилання, оформлені як кнопки) */
+/* Buttons (links styled as buttons) */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -121,7 +121,7 @@ h2 {
   font-weight: bold;
 }
 
-/* Теги-бейджі */
+/* Tag badges */
 .small-badge {
   display: inline-block;
   color: #666666;
@@ -143,7 +143,7 @@ h2 {
   padding: 4px 12px;
 }
 
-/* Звичайні блоки сайту */
+/* Regular site sections */
 .section {
   text-align: center;
   max-width: 700px;
@@ -151,12 +151,12 @@ h2 {
   padding: 0 20px;
 }
 
-/* Ширша секція для сітки карток */
+/* Wider section for card layouts */
 .section-wide {
   max-width: 1000px;
 }
 
-/* Сітка карток (grid): 3 колонки, на вужчих екранах автоматично менше */
+/* Card list (flexbox column): each card is a row with text and a picture */
 .cards {
   display: flex;
   flex-direction: column;
@@ -177,7 +177,7 @@ h2 {
   color: #111;
 }
 
-/* Темний блок внизу */
+/* Dark block (Speed and API) */
 .dark-box {
   background-color: #161a26;
   color: #ffffff;
@@ -215,7 +215,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* Блок "Speed": три картки (grid) */
+/* "Speed" block: three cards (grid) */
 .speed-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -283,7 +283,7 @@ h2 {
   text-decoration: none;
 }
 
-/* Футер: чотири колонки (grid) */
+/* Footer: four columns (grid) */
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -342,7 +342,7 @@ summary {
   font-weight: bold;
 }
 
-/* Текст, доступний лише допоміжним технологіям */
+/* Text available only to assistive technologies */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -355,7 +355,7 @@ summary {
   border: 0;
 }
 
-/* Посилання пропуску має ставати видимим за отримання фокуса */
+/* The skip link must become visible when it receives focus */
 .focusable:focus,
 .focusable:focus-visible {
   position: static;
@@ -367,21 +367,21 @@ summary {
   background: #fff;
 }
 
-/* Позначка поточної сторінки в меню */
+/* Marker of the current page in the menu */
 .site-header a[aria-current="page"] {
   color: #111;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* Помітна рамка фокуса для клавіатурних користувачів */
+/* Visible focus outline for keyboard users */
 a:focus-visible,
 summary:focus-visible {
   outline: 3px solid #3949ab;
   outline-offset: 3px;
 }
 
-/* У темному блоці рамка біла, щоб була помітна на чорному фоні */
+/* In the dark block the outline is white so it is visible on the dark background */
 .dark-box a:focus-visible {
   outline-color: #ffffff;
 }
@@ -416,7 +416,7 @@ figcaption {
   flex: 1 1 280px;
 }
 
-/* Блок "Problem": сітка карток (grid) */
+/* "Problem" block: card grid (grid) */
 .problem-text {
   max-width: 700px;
   margin: 10px auto;
@@ -454,12 +454,12 @@ figcaption {
   border-radius: 0;
 }
 
-/* Висока картка займає два рядки */
+/* The tall card spans two rows */
 .problem-card-tall {
   grid-row: span 2;
 }
 
-/* Блок "API": список функцій і код (grid) */
+/* "API" block: feature list and code (grid) */
 .api-grid {
   display: grid;
   grid-template-columns: 1fr 1.8fr;
@@ -526,7 +526,7 @@ figcaption {
   margin-top: 15px;
 }
 
-/* Блок "Channels": картки різної ширини (grid) */
+/* "Channels" block: cards of different widths (grid) */
 .channels-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -575,7 +575,7 @@ figcaption {
   border-radius: 0;
 }
 
-/* Ряд логотипів компаній під скріншотом */
+/* Row of company logos under the screenshot */
 .logos-title {
   margin-top: 40px;
   font-size: 13px;
@@ -591,7 +591,7 @@ figcaption {
   border-radius: 0;
 }
 
-/* Фінальний блок із закликом до дії */
+/* Final call-to-action block */
 .cta {
   margin-top: 80px;
 }
@@ -615,7 +615,7 @@ figcaption {
   border: none;
 }
 
-/* Плашка "Latest" над заголовком */
+/* "Latest" pill above the heading */
 .latest {
   display: inline-flex;
   align-items: center;
@@ -634,5 +634,13 @@ figcaption {
   color: #e88c5b;
 }
 
+.page {
+  text-align: left;
+}
+
+.page a,
+.page a:visited {
+  color: #3949ab;
+}
 
   

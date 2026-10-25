@@ -5,58 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Навчальний проєкт з курсу веб-програмування">
   <title>Остапович Владислав - Детальна інформація</title>
-  <style>
-    .red-text {
-      color: red;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="site-nav">
-    <a href="index.html">Головна</a> |
-    <a href="about.html">Про автора</a> |
-    <a href="contacts.html">Контакти</a>
-  </nav>
 
-  <h1>Остапович Владислав </h1>
-  <p class="red-text">Здобувач першого курсу спеціальності «Комп'ютерні науки».</p>
+  <a class="visually-hidden focusable" href="#main">Перейти до основного вмісту</a>
 
-  <h2>Про себе:</h2>
-  <p>
-    Мене звати Владислав Остапович, я студент першого курсу спеціальності «Комп'ютерні науки».</p>
+  <header class="site-header">
+    <a href="index.html" class="logo">Plain.</a>
+    <nav aria-label="Основна навігація">
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html" aria-current="page">Про автора</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="https://www.plain.com/">Маніфест</a></li>
+        <li><a href="https://www.plain.com/">Документація</a></li>
+        <li><a href="https://www.plain.com/">Клієнти</a></li>
+        <li><a href="https://www.plain.com/">Ціни</a></li>
+        <li><a href="https://www.plain.com/">Блог</a></li>
+        <li><a href="https://www.plain.com/">Журнал змін</a></li>
+        <li><a class="btn-signin" href="https://www.plain.com/">Увійти</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>
-       Маю великий інтерес до веб-розробки та прагну розвивати свої навички у цій сфері.
-     <p>
-      У вільний час займаюся самостійним вивченням нових технологій та практикуюсь у створенні веб-проєктів.
-     Також ходжу в зал і займався частково професійно баскетболом пару років. 
- </p>
-    
-  </p>
+  <main id="main">
+    <section class="section page" aria-labelledby="about-title">
+      <h1 id="about-title">Остапович Владислав Олександрович</h1>
+      <p class="red-text">Здобувач першого курсу спеціальності «Комп'ютерні науки».</p>
 
-  <h2>Який пристрій маю для навчальної лабораторної роботи</h2>
-  <ul>
-    <li>Ноутбук Lenovo LOQ</li>
-    <li>Комплектуючи:</li>
-      <li><p>GPU: AMD Ryzen 5 150</p></li>
-       <li><p> CPU: GeForce RTX 3050 6gb</p></li>
-        <li><p>RAM :16 GB</p></li>
-        <li><p>Windows 11 Home</p></li>
-        <li><p>SSD : 512 GB</p></li>
-
+      <h2>Про себе</h2>
+      <p>
+        Мене звати Владислав Остапович, я студент першого курсу спеціальності «Комп'ютерні науки». Група: ККК-61(б).
+        Сам з с.Зарічне, що на Рівненщині. Мені 18 років. Закінчив Зарічненський ліцей №1 
       </p>
-  </ul>
+      <p>
+        Маю великий інтерес до веб-розробки та прагну розвивати свої навички у цій сфері.
+      </p>
+      <p>
+        У вільний час займаюся самостійним вивченням нових технологій та практикуюсь у створенні веб-проєктів.
+        Також ходжу в зал і займався частково професійно баскетболом пару років.
+      </p>
 
- 
+      <h2>Пристрій для навчальної лабораторної роботи</h2>
+      <p>Ноутбук Lenovo LOQ. Комплектуючі:</p>
+      <ul>
+        <li>CPU: AMD Ryzen 5 150</li>
+        <li>GPU: GeForce RTX 3050 6 GB</li>
+        <li>RAM: 16 GB</li>
+        <li>SSD: 512 GB</li>
+        <li>ОС: Windows 11 Home</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>

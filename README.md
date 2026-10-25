@@ -1,27 +1,28 @@
-# Веб-програмування — навчальний проєкт
+# Web Programming — Course Project
 
-Репозиторій лабораторних робіт з навчальної дисципліни «Веб-програмування».
+Repository of laboratory works for the course "Web Programming".
 
-**Автор:** Остапович Владислав, група ККК-61(б)
-**Тема проєкту:** інформаційний сайт про: "Як розробники допомагають своїм користувачам"
-**Адреса опублікованого сайту:** https://ostapovichvlad089-cpu.github.io/web-course/
+**Author:** Ostapovych Vladyslav, group KKK-61(b)
+**Project topic:** an informational website about "How developers help their users"
+**Published site:** https://ostapovichvlad089-cpu.github.io/web-course/
+**Design mockup:** Plain (Figma, "20 Free Fully Editable Websites")
 
-## Перелік лабораторних робіт
+## List of laboratory works
 
-| № | Назва лабораторної роботи | Статус |
+| № | Laboratory work title | Status |
 |---|---|---|
-| 1 | Середовище розроблення, публікація документа | ✅ Виконано |
-| 2 | Розмітка текстового вмісту | ⬜ Не виконано |
+| 1 | Development environment, publishing a document | ✅ Done |
+| 2 | Text content markup | ⬜ Not done |
 
-## Використані технології
+## Technologies used
 
-- **HTML5** — розмітка вмісту сторінок
-- **CSS3** — базове оформлення (вбудовані стилі `<style>`)
-- **Git / GitHub** — контроль версій, зберігання репозиторію
-- **GitHub Pages** — публікація та хостинг готового сайту
-- **Visual Studio Code** — середовище розроблення
+- **HTML5** — semantic page markup (header, nav, main, section, article, footer)
+- **CSS3** — styling in a separate `style.css` file, layout with Flexbox and Grid
+- **Git / GitHub** — version control, repository storage
+- **GitHub Pages** — publishing and hosting of the finished site
+- **Visual Studio Code** — development environment
 
-## Структура каталогів проєкту
+## Project directory structure
 
 ```
 web-course/
@@ -29,5 +30,7 @@ web-course/
 ├── README.md
 ├── index.html
 ├── about.html
-└── contacts.html
+├── contacts.html
+├── style.css
+└── images/      
 ```
