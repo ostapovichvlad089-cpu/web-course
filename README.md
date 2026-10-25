@@ -12,7 +12,9 @@ Repository of laboratory works for the course "Web Programming".
 | № | Laboratory work title | Status |
 |---|---|---|
 | 1 | Development environment, publishing a document | ✅ Done |
-| 2 | Text content markup | ⬜ Not done |
+| 2 | Text content markup | ✅ Done |
+| 3 | Markup of the structure of a hypertext document | ✅ Done |
+| 4 | Semantic Reorganization and Validation of a Web Page | ✅ Done |
 
 ## Technologies used
 
